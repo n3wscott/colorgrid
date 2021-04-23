@@ -45,6 +45,7 @@ const useStyles = makeStyles((theme) => ({
       easing: theme.transitions.easing.sharp,
       duration: theme.transitions.duration.leavingScreen,
     }),
+    'background-image': 'linear-gradient(to right, red, orange, yellow, green, cyan, blue, violet)',
   },
   appBarShift: {
     marginLeft: drawerWidth,
@@ -153,7 +154,7 @@ export default function Dashboard(props) {
   return (
     <div className={classes.root}>
       <CssBaseline />
-      <AppBar position="absolute" className={classes.appBar}>
+      <AppBar position="absolute" color="transparent" className={classes.appBar}>
         <Toolbar className={classes.toolbar}>
           <Typography component="h1" variant="h6" color="inherit" noWrap className={classes.title}>
             ColorGrid, Rainbow Deployments Viewer
