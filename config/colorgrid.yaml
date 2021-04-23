@@ -1,0 +1,10 @@
+
+apiVersion: serving.knative.dev/v1
+kind: Service
+metadata:
+  name: colorgrid
+spec:
+  template:
+    spec:
+      containers:
+        - image: ko://github.com/n3wscott/colorgrid
